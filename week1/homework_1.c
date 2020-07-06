@@ -2,7 +2,7 @@
  * @Date: 2020-07-05 16:39:57
  * @Author: Dai Zhechen
  * @Github: https://github.com/zhechendai
- * @LastEditTime: 2020-07-05 16:48:14
+ * @LastEditTime: 2020-07-06 17:56:47
  * @Copyright ©️ 2020 Dai Zhechen. All Rights Reserved.
  */ 
 
@@ -26,3 +26,7 @@ int main()
 
     return 0;
 }
+
+// 第二位数获得，除上述方法
+// 对原数%100取余，再/10
+// 对原数/10，再%10取余
