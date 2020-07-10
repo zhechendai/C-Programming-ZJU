@@ -1,31 +1,29 @@
 /*
- * @Date: 2020-07-05 14:31:56
+ * @Date: 2020-07-10 14:48:04
  * @Author: Dai Zhechen
  * @Github: https://github.com/zhechendai
- * @LastEditTime: 2020-07-10 15:54:31
+ * @LastEditTime: 2020-07-10 15:59:34
  * @Copyright ©️ 2020 Dai Zhechen. All Rights Reserved.
  */ 
 
-// find prime from 1-100
-
 #include <stdio.h>
 
-int perfNumber(int i)
-{
-    int per=1;
-    for(int j=2;j<i;j++)
-    {
-        if(i%j==0)
-        {
-            per+=j;
-        }
-    }
-    if(per!=i)
-    {
-        i=0;
-    }
-        return i;
-}
+int perfNumber(int i);
+// {
+//     int per=1;
+//     for(int j=2;j<i;j++)
+//     {
+//         if(i%j==0)
+//         {
+//             per+=j;
+//         }
+//     }
+//     if(per!=i)
+//     {
+//         i=0;
+//     }
+//         return i;
+// }
 
 int main()
 {
@@ -55,3 +53,20 @@ int main()
 	return 0;
 }
 
+
+int perfNumber(int i)
+{
+    int per=1;
+    for(int j=2;j<i;j++)
+    {
+        if(i%j==0)
+        {
+            per+=j;
+        }
+    }
+    if(per!=i)
+    {
+        i=0;
+    }
+        return i;
+}
