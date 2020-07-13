@@ -2,7 +2,7 @@
  * @Date: 2020-07-05 14:31:56
  * @Author: Dai Zhechen
  * @Github: https://github.com/zhechendai
- * @LastEditTime: 2020-07-10 15:54:31
+ * @LastEditTime: 2020-07-13 18:08:04
  * @Copyright ©️ 2020 Dai Zhechen. All Rights Reserved.
  */ 
 
@@ -10,48 +10,13 @@
 
 #include <stdio.h>
 
-int perfNumber(int i)
-{
-    int per=1;
-    for(int j=2;j<i;j++)
-    {
-        if(i%j==0)
-        {
-            per+=j;
-        }
-    }
-    if(per!=i)
-    {
-        i=0;
-    }
-        return i;
-}
-
 int main()
 {
-    int n,m;
-    scanf("%d %d",&n,&m);
-    int b=0;
-    for(int i=n+1;i<m;i++)
-    {
-        if(perfNumber(i))
-        {
-            if(!b)
-            {
-            printf("%d",i);
-            b=1;
-            }
-            else
-            {
-                printf(" %d",i);
-            }
-        }
-    }
-    if(!b)
-    {
-        printf("NIL");
-    }
-    printf("\n");
+    int a[] = {5, 15, 34, 54, 14, 2, 52, 72};
+    int *p = &a[1];
+
+    printf("%d",p[2]);
+    // printf("%d", a[0]);
 	return 0;
 }
 
